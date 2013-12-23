@@ -18,6 +18,7 @@ OuiShare::Application.routes.draw do
       resources :projects
       resources :events
       resources :community_pages
+      resources :faq_pages
       resources :faqs
       resources :missions
       resources :activities
@@ -32,6 +33,7 @@ OuiShare::Application.routes.draw do
     get 'activities' => 'activities#index'
     get 'missions' => 'home#missions'
     get 'timelines' => 'home#timelines'
+    get 'faq_pages' => 'home#faq_pages'
   end
 
   get 'projects/:id' => 'admin/projects#show', as: 'project'
