@@ -79,6 +79,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def has_top_internal? picture
-    ['Mission', 'FaqPage', 'GovernancePage'].include?(model.class.name)
+    ['Mission', 'FaqPage', 'GovernancePage', 'ValuePage'].include?(model.class.name)
   end
 end
