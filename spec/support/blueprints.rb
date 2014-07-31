@@ -107,3 +107,20 @@ CollaborativeEconomyPage.blueprint do
   text5 { 'Some nice text' }
 end
 
+CommunityPage.blueprint do
+  main_text { 'Some nice text' }
+  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  main_text2 { 'Some nice text' }
+end
+
+Region.blueprint do
+  title { 'Some nice title' }
+end
+
+Community.blueprint do
+  text { 'Some nice text' }
+  name { 'Some nice name' }
+  link { 'http://somenice.link' }
+  region { Region.make! }
+end
+
