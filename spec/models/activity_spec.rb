@@ -1,5 +1,15 @@
 require 'spec_helper'
 
 describe Activity do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject(:activity) { Activity.make! }
+
+  it { should be_valid }
+
+  describe 'Associations' do
+    it { should belong_to :language }
+  end
+
+  describe 'image' do
+    it { expect(subject.image).to be_present }
+  end
 end

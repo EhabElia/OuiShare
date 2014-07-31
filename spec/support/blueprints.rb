@@ -60,3 +60,10 @@ About.blueprint do
   title4 { 'Some nice title' }
   text4 { 'Some nice text' }
 end
+
+Activity.blueprint do
+  name { 'Some nice activity' }
+  text { 'Some nice text' }
+  link { 'http://nice.link' }
+  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
+end
