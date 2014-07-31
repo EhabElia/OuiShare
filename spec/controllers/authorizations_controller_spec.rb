@@ -6,7 +6,7 @@ describe AuthorizationsController do
 
   context 'Not authenticated' do
     before { delete :destroy, id: authorization.id }
-    it { expect(response).to redirect_to(new_user_session_path) }
+    it { expect(response).to redirect_to(new_user_session_path(locale: 'en')) }
     it { expect(-> { authorization.reload }).not_to raise_error(ActiveRecord::RecordNotFound) }
   end
 
