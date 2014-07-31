@@ -67,3 +67,15 @@ Activity.blueprint do
   link { 'http://nice.link' }
   image { File.open("#{Rails.root}/spec/fixtures/image.png") }
 end
+
+AdvisorsPage.blueprint do
+  title { 'Some nice title' }
+  text { 'Some nice text' }
+  link_text { 'Some nice link' }
+end
+
+ArticlesSection.blueprint do
+  title { 'Some nice title' }
+  text { 'Some nice text' }
+  link_text { 'Some nice link' }
+end
