@@ -91,3 +91,19 @@ CocreationPage.blueprint do
   text { 'Some nice text' }
   image { File.open("#{Rails.root}/spec/fixtures/image.png") }
 end
+
+CollaborativeEconomyPage.blueprint do
+  main_text { 'Some nice text' }
+  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  title1 { 'Some nice title' }
+  text1 { 'Some nice text' }
+  title2 { 'Some nice title' }
+  text2 { 'Some nice text' }
+  title3 { 'Some nice title' }
+  text3 { 'Some nice text' }
+  title4 { 'Some nice title' }
+  text4 { 'Some nice text' }
+  title5 { 'Some nice title' }
+  text5 { 'Some nice text' }
+end
+

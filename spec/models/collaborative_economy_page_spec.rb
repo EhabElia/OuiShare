@@ -1,5 +1,15 @@
 require 'spec_helper'
 
 describe CollaborativeEconomyPage do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { CollaborativeEconomyPage.make! }
+
+  it { should be_valid }
+
+  describe 'associations' do
+    it { should belong_to :language }
+  end
+
+  describe 'image' do
+    it { expect(subject.image).to be_present }
+  end
 end
