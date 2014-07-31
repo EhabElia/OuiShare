@@ -124,3 +124,19 @@ Community.blueprint do
   region { Region.make! }
 end
 
+ContactPage.blueprint do
+  title { 'Some nice title' }
+  text { 'Some nice text' }
+end
+
+DonationPage.blueprint do
+  main_title { 'Some nice title' }
+  main_text { 'Some nice text' }
+  thanks_text { 'Some nice thanks' }
+  image1 { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  image2 { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  title1 { 'Some nice title' }
+  text1 { 'Some nice text' }
+  title2 { 'Some nice title' }
+  text2 { 'Some nice text' }
+end
