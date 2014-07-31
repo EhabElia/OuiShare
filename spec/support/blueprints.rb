@@ -40,4 +40,23 @@ WhatIsSection.blueprint do
   title4 {'Past Projects'}
   text4 {'OuiShare Fest, and more!'}
   language {Language.make!}
+  image1 { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  image2 { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  image3 { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  image4 { File.open("#{Rails.root}/spec/fixtures/image.png") }
+end
+
+About.blueprint do
+  main_title { 'Some nice title' }
+  main_text1 { 'Some nice text' }
+  main_text2 { 'Some nice text' }
+  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
+  title1 { 'Some nice title' }
+  text1 { 'Some nice text' }
+  title2 { 'Some nice title' }
+  text2 { 'Some nice text' }
+  title3 { 'Some nice title' }
+  text3 { 'Some nice text' }
+  title4 { 'Some nice title' }
+  text4 { 'Some nice text' }
 end
