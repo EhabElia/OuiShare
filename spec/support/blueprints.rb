@@ -79,3 +79,15 @@ ArticlesSection.blueprint do
   text { 'Some nice text' }
   link_text { 'Some nice link' }
 end
+
+Cocreation.blueprint do
+  text { 'Some nice text' }
+  name { 'Some nice name' }
+  link { 'http://somenice.link' }
+  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
+end
+
+CocreationPage.blueprint do
+  text { 'Some nice text' }
+  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
+end
