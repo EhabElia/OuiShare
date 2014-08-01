@@ -140,3 +140,32 @@ DonationPage.blueprint do
   title2 { 'Some nice title' }
   text2 { 'Some nice text' }
 end
+
+EventsSection.blueprint do
+  title { 'Some nice title' }
+  text { 'Some nice text' }
+end
+
+Event.blueprint do
+  title { 'Some nice title' }
+  place { 'Some nice place' }
+  date_start { Time.now + 10.days }
+  date_end { Time.now + 12.days }
+  time { Time.now }
+  resume { 'Some nice resume' }
+  info { 'Some nice info' }
+  join_us_text { 'Get with us, we are nice' }
+  service1_link { 'http://somenice.link' }
+  service1_title { 'Some nice service' }
+  service2_link { 'http://somenice.link' }
+  service2_title { 'Some nice service' }
+  service3_link { 'http://somenice.link' }
+  service3_title { 'Some nice service' }
+  title1 { 'Some nice title' }
+  text1 { 'Some nice text' }
+  title2 { 'Some nice title' }
+  text2 { 'Some nice text' }
+  visible { true }
+  slug { 'nice_event' }
+  address { 'Rua Liberdade, 553, Porto Alegre - RS' }
+end
