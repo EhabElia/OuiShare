@@ -10,6 +10,7 @@ describe CocreationPage do
   end
 
   describe 'image' do
-    it { expect(subject.image).to be_present }
+    let(:cocreation_page) { CocreationPage.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
+    it { expect(cocreation_page.image.url).to be_present }
   end
 end

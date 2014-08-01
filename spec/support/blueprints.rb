@@ -50,7 +50,6 @@ About.blueprint do
   main_title { 'Some nice title' }
   main_text1 { 'Some nice text' }
   main_text2 { 'Some nice text' }
-  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
   title1 { 'Some nice title' }
   text1 { 'Some nice text' }
   title2 { 'Some nice title' }
@@ -65,7 +64,6 @@ Activity.blueprint do
   name { 'Some nice activity' }
   text { 'Some nice text' }
   link { 'http://nice.link' }
-  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
 end
 
 AdvisorsPage.blueprint do
@@ -84,17 +82,14 @@ Cocreation.blueprint do
   text { 'Some nice text' }
   name { 'Some nice name' }
   link { 'http://somenice.link' }
-  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
 end
 
 CocreationPage.blueprint do
   text { 'Some nice text' }
-  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
 end
 
 CollaborativeEconomyPage.blueprint do
   main_text { 'Some nice text' }
-  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
   title1 { 'Some nice title' }
   text1 { 'Some nice text' }
   title2 { 'Some nice title' }
@@ -109,7 +104,6 @@ end
 
 CommunityPage.blueprint do
   main_text { 'Some nice text' }
-  image { File.open("#{Rails.root}/spec/fixtures/image.png") }
   main_text2 { 'Some nice text' }
 end
 
@@ -133,8 +127,6 @@ DonationPage.blueprint do
   main_title { 'Some nice title' }
   main_text { 'Some nice text' }
   thanks_text { 'Some nice thanks' }
-  image1 { File.open("#{Rails.root}/spec/fixtures/image.png") }
-  image2 { File.open("#{Rails.root}/spec/fixtures/image.png") }
   title1 { 'Some nice title' }
   text1 { 'Some nice text' }
   title2 { 'Some nice title' }

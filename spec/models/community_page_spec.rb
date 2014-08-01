@@ -10,6 +10,7 @@ describe CommunityPage do
   end
 
   describe 'image' do
-    it { expect(subject.image).to be_present }
+    let(:community_page) { CommunityPage.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
+    it { expect(community_page.image.url).to be_present }
   end
 end

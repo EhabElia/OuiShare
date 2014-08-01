@@ -10,7 +10,9 @@ describe DonationPage do
   end
 
   describe 'image' do
-    it { expect(subject.image1).to be_present }
-    it { expect(subject.image2).to be_present }
+    let(:donation_page) { DonationPage.make! image1: File.open("#{Rails.root}/spec/fixtures/image.png"),
+                                             image2: File.open("#{Rails.root}/spec/fixtures/image.png") }
+    it { expect(subject.image1.url).to be_present }
+    it { expect(subject.image2.url).to be_present }
   end
 end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Activity do
-  subject(:activity) { Activity.make! }
+  subject{ Activity.make! }
 
   it { should be_valid }
 
@@ -10,6 +10,7 @@ describe Activity do
   end
 
   describe 'image' do
-    it { expect(subject.image).to be_present }
+    let(:activity) { Activity.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
+    it { expect(activity.image.url).to be_present }
   end
 end

@@ -10,6 +10,7 @@ describe About do
   end
 
   describe 'image' do
-    it { expect(subject.image).to be_present }
+    let(:about) { About.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
+    it { expect(about.image).to be_present }
   end
 end
