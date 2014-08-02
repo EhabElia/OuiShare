@@ -11,6 +11,6 @@ describe ExpertGroupsPage do
 
   describe 'image' do
     let(:exp_groups_page) { ExpertGroupsPage.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
-    it { expect(exp_groups_page.image).to be_present }
+    it { expect(exp_groups_page.image.url).to be_present }
   end
 end

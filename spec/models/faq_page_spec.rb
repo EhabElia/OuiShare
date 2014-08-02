@@ -10,7 +10,7 @@ describe FaqPage do
   end
 
   describe 'image' do
-    let(:about) { FaqPage.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
-    it { expect(about.image).to be_present }
+    let(:resource) { FaqPage.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
+    it { expect(resource.image.url).to be_present }
   end
 end

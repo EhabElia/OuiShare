@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe WhatIsSection do
-  before do
+  before :all do
     @what_is_section = WhatIsSection.make!
   end
 

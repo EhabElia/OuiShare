@@ -11,6 +11,6 @@ describe Cocreation do
 
   describe 'image' do
     let(:cocreation) { Cocreation.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
-    it { expect(cocreation.image).to be_present }
+    it { expect(cocreation.image.url).to be_present }
   end
 end

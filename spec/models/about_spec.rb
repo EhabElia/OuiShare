@@ -11,6 +11,6 @@ describe About do
 
   describe 'image' do
     let(:about) { About.make! image: File.open("#{Rails.root}/spec/fixtures/image.png") }
-    it { expect(about.image).to be_present }
+    it { expect(about.image.url).to be_present }
   end
 end
