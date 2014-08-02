@@ -161,3 +161,13 @@ Event.blueprint do
   slug { 'nice_event' }
   address { 'Rua Liberdade, 553, Porto Alegre - RS' }
 end
+
+ExpertGroupsPage.blueprint do
+  main_text { 'Some nice text' }
+end
+
+ExpertGroup.blueprint do
+  name { 'Some nice name' }
+  text { 'Some nice text' }
+  link { 'http://somenice.link' }
+end
