@@ -171,3 +171,12 @@ ExpertGroup.blueprint do
   text { 'Some nice text' }
   link { 'http://somenice.link' }
 end
+
+FaqPage.blueprint do
+  text { 'Some nice text' }
+end
+
+FaqQuestion.blueprint do
+  question { 'Some nice question?' }
+  answer { 'Indeed a nice question.' }
+end

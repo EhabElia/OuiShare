@@ -1,5 +1,11 @@
 require 'spec_helper'
 
 describe FaqQuestion do
-  pending "add some examples to (or delete) #{__FILE__}"
+  subject { FaqQuestion.make! }
+
+  it { should be_valid }
+
+  describe 'associations' do
+    it { should belong_to :language }
+  end
 end
