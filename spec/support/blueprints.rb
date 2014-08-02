@@ -180,3 +180,12 @@ FaqQuestion.blueprint do
   question { 'Some nice question?' }
   answer { 'Indeed a nice question.' }
 end
+
+FundedPage.blueprint do
+  main_text { 'Some nice main text' }
+end
+
+FundingInfo.blueprint do
+  title { 'Some nice title' }
+  text { 'Some nice text' }
+end
