@@ -10,7 +10,6 @@
         = resource.name 
       h4.subtitle = resource.title if !resource.profile_type.user?
       .markdown = resource.bio_html
-
       / span.label.blue blah
       / span.label.blue blah
       / span.label.blue blah
@@ -42,6 +41,13 @@
           li
             a.linkedin href=resource.linkedin_url
               i.fa.fa-linkedin
+  / div.row.section
+  /   div.large-3.columns
+  /     h4.subtitle = resource.occupation.name
+  /   div.large-3.columns
+  /     h4.subtitle = resource.language.name
+  /   div.large-3.columns
+  /     h4.subtitle = resource.country
 
   /div.contribute.section
     div.row
